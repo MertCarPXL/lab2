@@ -1,0 +1,13 @@
+name: CHECKOUT EXAMPLE
+on:
+  workflow_dispatch:
+
+jobs:  
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout code
+      uses: action/checkout@v4
+
+    - name: list content
+      run: ls -alhR
