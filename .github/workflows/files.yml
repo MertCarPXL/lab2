@@ -1,0 +1,13 @@
+name: directory and file manipulation
+on:
+  workflow_dispatch:
+
+jobs:
+  builder:
+    runs-on: ubuntu-latest
+    steps:
+    - name: make directory 
+      run: mkdir newDirectory
+
+    - name: make file with text
+      run: echo "test 123" > newDirectory/newFile.txt
