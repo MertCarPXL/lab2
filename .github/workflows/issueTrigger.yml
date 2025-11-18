@@ -1,0 +1,13 @@
+name: issue trigger
+on:
+  issues:
+    types: [opened] 
+
+jobs:
+  logs:
+    runs-on: ubuntu-latest
+    steps:  
+    - name: logs
+      run: |
+        echo "issue titel: ${{ github.event.issue.titel }}" 
+        echo "issue body: ${{ github.event.issue.body }}"
