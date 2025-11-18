@@ -14,5 +14,6 @@ jobs:
         node-version: '20.x'
     - name: verification
       run: ls -alhR
-
-    
+    - name: Bundle application into ZIP
+      run:  zip -r app-bundle.zip 
+           
