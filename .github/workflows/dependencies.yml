@@ -15,5 +15,5 @@ jobs:
     - name: verification
       run: ls -alhR
     - name: Bundle application into ZIP
-      run:  zip -r app-bundle.zip 
+      run: zip -r app-bundle.zip 
            
